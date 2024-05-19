@@ -1,6 +1,6 @@
 import streamlit as st
 import locale
-locale.setlocale(locale.LC_ALL, 'sv_SE.UTF-8') # Use '' for auto, or force e.g. to 'en_US.UTF-8'
+locale.setlocale(locale.LC_ALL, 'sv_SE') # Use '' for auto, or force e.g. to 'en_US.UTF-8'
 
 
 def calcMaxPant(savings):
