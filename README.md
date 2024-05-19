@@ -40,10 +40,6 @@ Check out the live demo of the app [here](https://housesavingscalculator.streaml
 - **Formula**: `kontantinsats_max = house_price * 0.15`
 - **Description**: The down payment required is 15% of the house price.
 
-## Screenshots
-
-![App Screenshot](screenshot.png)
-
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request. We welcome all contributions!

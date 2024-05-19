@@ -13,7 +13,7 @@ def calcMaxPant(savings):
 
 def calculate_costs(house_price: float, pant_brief: float):
     lagfart_max = house_price * 0.015 + 825
-    pantbrev_max = (house_price * 0.85 - pant_brief) * 0.02 + 325
+    pantbrev_max = (house_price * 0.85 - pant_brief) * 0.02 + 375
     kontantinsats_max = house_price * 0.15
     return lagfart_max, pantbrev_max, kontantinsats_max
 
@@ -38,7 +38,7 @@ st.markdown('---')
 st.header("1. Hur dyrt hus har jag råd med?")
 
 # Create an input field
-input_value = st.number_input("Hur mycket sparpengar kan du lägga på huset totalt, inklusive kontantinsats, pantbrev och lagfart?:", min_value=0.0, value=0.0)
+input_value = st.number_input("Hur mycket sparpengar kan du lägga på huset totalt, inklusive kontantinsats, pantbrev och lagfart?:", min_value=0, value=0)
 
 # When the button is clicked, use the input value in the calc function
 if st.button("Räkna ut pris på hus 💵"):
@@ -52,8 +52,8 @@ st.markdown('---')
 st.header("2. Hur mycket sparpengar behöver jag för ett specifikt hus?")
 
 # Create an input field
-house_price = st.number_input("Vad är husets uppskattade pris?", min_value=0.0, value=0.0)
-pant_brief = st.number_input("Vad är värdet på husets pantbrev (t.ex. 120 000)", min_value=0.0, value=0.0)
+house_price = st.number_input("Vad är husets uppskattade pris?", min_value=0, value=0)
+pant_brief = st.number_input("Vad är värdet på husets pantbrev (t.ex. 120 000)", min_value=0, value=0)
 
 # When the button is clicked, use the input value in the calc function
 if st.button("Räkna ut sparpengar 💰"):
