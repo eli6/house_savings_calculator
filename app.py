@@ -1,10 +1,13 @@
 import streamlit as st
 import locale
-locale.setlocale(locale.LC_ALL, 'sv_SE') # Use '' for auto, or force e.g. to 'en_US.UTF-8'
+locale.setlocale(locale.LC_ALL, 'sv_SE') 
 
+# whole calculation to get the maximum house price (n) as a function of savings(s) and existing pantbrev(z):
+# s = 0.15n + (n*0.015n+825) + (n*0.85-z)*0.02+375
+# where kontantinsats is 0.15n, lagfart is n*0.015+825 and pantbrev is (n*0.85-z)*0.02+375
 
 def calcMaxPant(savings):
-    houseYouCanAfford = (savings-1150)/0.182
+    houseYouCanAfford = (savings-1200)/0.182
     # round by first decimal and remove the decimal:
     if houseYouCanAfford < 0:
         houseYouCanAfford = 0
@@ -19,7 +22,7 @@ def calculate_costs(house_price: float, pant_brief: float):
 
 
 def howMuchSavingsForHouse(pantSum, housePrice):
-    savingsForHouse = 0.182*housePrice-0.02*pantSum+1150
+    savingsForHouse = 0.182*housePrice-0.02*pantSum+1200
     return savingsForHouse
 
 
