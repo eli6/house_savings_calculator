@@ -2,6 +2,11 @@
 
 Welcome to the House Purchase Cost Calculator! This Streamlit app, written in Python, helps you calculate the amount of savings needed for buying a house in Sweden. The app includes calculations for 'lagfart', 'pantbrev', and 'kontantinsats'. You can also use it to calculate the amount of savings needed to buy a particular house.💰
 
+## Demo 🚀
+
+Check out the live demo of the app [here](https://housesavingscalculator.streamlit.app/). 
+
+
 ## How to Use
 
 1. **Install Dependencies**: Ensure you have Python and Streamlit installed. If not, you can install Streamlit using pip:
